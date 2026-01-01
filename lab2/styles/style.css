@@ -1,0 +1,41 @@
+nav ul li a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.card a:hover {
+  background-color: black;
+  color: white;
+}
+.list-section ul li:first-child {
+  color: green;
+  font-weight: bold;
+}
+.list-section ul li:last-child {
+  color: blue;
+  font-weight: bold;
+}
+.list-section ul li:nth-child(2) {
+  background-color: #bb4949;
+}
+.list-section ul li:nth-child(3) {
+  background-color: #49bb7f;
+}
+
+input:focus {
+  border: 2px solid orange;
+  outline: none;
+}
+
+input[type="checkbox"]:checked {
+  accent-color: purple;
+}
+.intro p:not(.highlight) {
+  color: gray;
+}
+
+input:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+

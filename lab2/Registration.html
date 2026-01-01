@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="/styles/registration.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Registration</h1>
+        
+        <form action="Thankyou.html" method="get">
+            <!-- First Name -->
+            <div class="form-group">
+                <label for="firstname">First name: <span class="required">*</span></label>
+                <input type="text" id="firstname" name="firstname" required>
+            </div>
+
+            <!-- Last Name -->
+            <div class="form-group">
+                <label for="lastname">Last Name: <span class="required">*</span></label>
+                <input type="text" id="lastname" name="lastname" required>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email: <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">Password: <span class="required">*</span></label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <!-- Repeat Password -->
+            <div class="form-group">
+                <label for="repeat-password">Repeat password: <span class="required">*</span></label>
+                <input type="password" id="repeat-password" name="repeat-password" required>
+            </div>
+
+            <!-- Birth Date -->
+            <div class="form-group">
+                <label for="birthdate">Birth Date:</label>
+                <input type="date" id="birthdate" name="birthdate">
+            </div>
+
+            <!-- User Picture -->
+            <div class="form-group">
+                <label for="picture">User Picture:</label>
+                <input type="file" id="picture" name="picture" accept="image/*">
+            </div>
+
+            <!-- Gender -->
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Faculty -->
+            <div class="form-group">
+                <label for="faculty">Faculty:</label>
+                <select id="faculty" name="faculty">
+                    <option value="">Select Faculty</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="medicine">Medicine</option>
+                    <option value="science">Science</option>
+                    <option value="arts">Arts</option>
+                    <option value="commerce">Commerce</option>
+                    <option value="law">Law</option>
+                    <option value="computer-science">Computer and Information Science</option>
+                </select>
+            </div>
+
+            <!-- Interests -->
+            <div class="form-group">
+                <label>Interests:</label>
+                <div class="checkbox-group">
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="programming" name="interests" value="programming">
+                        <label for="programming">Programming</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="reading" name="interests" value="reading">
+                        <label for="reading">Reading</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="swimming" name="interests" value="swimming">
+                        <label for="swimming">Swimming</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="sports" name="interests" value="sports">
+                        <label for="sports">Sports</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="music" name="interests" value="music">
+                        <label for="music">Music</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About You -->
+            <div class="form-group">
+                <label for="about">About you:</label>
+                <textarea id="about" name="about" rows="5" placeholder="Tell us about yourself..."></textarea>
+            </div>
+
+            <!-- Terms and Conditions -->
+            <div class="form-group checkbox-single">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agreed to terms and condition <span class="required">*</span></label>
+            </div>
+
+            <!-- Buttons -->
+            <div class="button-group">
+                <button type="submit" class="submit-btn">Submit</button>
+                <button type="reset" class="reset-btn">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
